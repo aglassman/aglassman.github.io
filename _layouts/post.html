@@ -1,9 +1,14 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>{{page.title}}</title>
-</head>
-<body>
-	{{page.content}}
-</body>
-</html>
+---
+blog-active: active
+---
+{% include pre_wrap.html %}
+     
+  <div class="row">
+  	<h1>{{page.title}}</h1>
+  	<h3>{{page.date | date: "%a, %b %d, %Y"}}</h3>
+
+  	{{content}}  
+
+  </div>
+
+{% include post_wrap.html %}
