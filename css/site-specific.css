@@ -1,0 +1,10 @@
+body {
+	/* image from subtlepatterns.com */
+	background-image: url('/img/debut_light.png');
+	color:#484848 ;
+}
+
+hr {
+	border-top-color:#484848 ;
+	border-bottom-color:#484848 ;
+}

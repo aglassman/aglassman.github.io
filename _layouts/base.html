@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>My Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Accuval Mobile Time Entry">
+    <meta name="author" content="Andrew Glassman">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/site-specific.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+    <link rel="icon" 
+      type="image/x-icon" 
+      href="/img/favicon.ico">
+
+   <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+
+  </head>
+
+  <body>
+
+    <div class="navbar  navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/">Andrew Glassman</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+             
+                <li class="{{page.home-active}}"><a href="/">Home</a></li>
+              
+                <li class="{{page.about-active}}"><a href="/about.html">About Me</a></li>
+              
+                <li class="{{page.twitter-active}}"><a href="/twitter.html">Twitter</a></li>
+              
+            </ul>  
+          </div><!--/.nav-collapse -->
+          <div class="container">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+     {{page.content}}
+
+      <hr>
+
+      <footer>
+        <p>&copy; Andrew Glassman 2012</p>
+      </footer>
+    </div> 
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+  </body>
+</html>
