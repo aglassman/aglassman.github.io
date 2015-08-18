@@ -9,7 +9,10 @@ blog-active: active
     <span class="date">{{ post.date  | date: "%a, %b %d, %Y" }}</span>
   </p>
   <div class="content">
-    {{ post.content }}
+    {{ post.content | split:'<!--break-->' | first }}
+   {% if post.content contains '<!--break-->' %}
+      <a href="{{ post.url }}">read more</a>
+   {% endif %}
   </div>
 {% endfor %}
 <div>
