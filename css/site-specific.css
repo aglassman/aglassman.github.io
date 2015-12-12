@@ -8,3 +8,8 @@ hr {
 	border-top-color:#484848 ;
 	border-bottom-color:#484848 ;
 }
+
+.me {
+	border-radius: 10px;
+	padding: 5px;
+}
